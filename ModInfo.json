@@ -1,9 +1,14 @@
 {
     "Id" : "Template",
+    // Change this to true in order to share your mod on Steam Workshop.
+    // Also delete the SteamWorkshopItemId file that came with the example mod!
     "SteamWorkshop" : false,
+    // Please create your own ModCover.jpg as well
     "Name" : "Stardeus Mod Template",
     "Description" : "Example Stardeus mod template with VS Code. Contains official examples of how to mod certain aspects of the game. See more details at the GitHub repo: https://github.com/kodolinija/stardeus-mod-template",
-    "ModVersion" : "1.0.0",
-    "GameVersion" : "0.10.0",
-    "Dependencies" : [ "Core" ]
+    "ModVersion" : "1.1.0",
+    "GameVersion" : "0.12.7"
+    // Uncomment if your mod depends on other mods.
+    // "Core" does not need to be defined as a dependency.
+    // "Dependencies" : [ "ModA", "ModB" ]
 }

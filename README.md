@@ -9,6 +9,11 @@ See subfolders for more readme files on how to create Artwork, and Definitions.
 
 Best place to ask questions about modding Stardeus is on [Stardeus Discord](https://discord.com/invite/89amEwP), #stardeus-modding channel.
 
+## Empty Mod
+
+If you want to create a simple mod, this empty mod project may be a better starting point:
+https://github.com/kodolinija/stardeus-mod-empty
+
 ## GitHub Repository
 
 IMPORTANT! If you downloaded this mod from [Stardeus Steam Workshop](https://steamcommunity.com/app/1380910/workshop/),
@@ -52,12 +57,17 @@ When your mod is ready, you can share it with the world by uploading it to the S
 ### Initial Upload
 
 0. Make sure you have removed any unnecessary files and folders from the mod, including, .vscode, .git, Artwork, Blender files, any unused files from the mod template, etc
-1. Remove the `SteamWorkshopItemId` file.
+1. Make sure your mod is not next to `Core` mod, but instead is in the user mod directory. You can open that directory via `Main Menu` > `Mods` > `About Mods`
+2. Remove the `SteamWorkshopItemId` file.
 1. Edit the `ModInfo.json` and change the `SteamWorkshop` from `false` to `true`.
 2. Make sure you have changed the `ModCover.jpg` and removed any unnecessary files that were in the template.
 3. Run Stardeus through Steam and open `Main Menu > Mods > Your Mod`.
 4. Press the `Upload to Steam Workshop` button.
 5. A confirmation popup will appear shortly.
+
+### Troubleshooting
+
+- If upload fails with `k_EResultLimitExceeded`, it's possible that the ModCover.jpg is too large. Try reducing the cover size to < 150Kb.
 
 ### Updating Your Mod
 
