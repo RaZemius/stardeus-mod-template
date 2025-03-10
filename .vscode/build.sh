@@ -1,10 +1,8 @@
 #!/bin/bash
-
-# Remove unnecessary assemblies
-rm -f ./Libraries/*.*
-
-# Remove obj cache
-rm -f ./.vscode/obj/*.*
-
 # build dll
-dotnet build .vscode/mod.csproj
+dotnet build .vscode/mod.csproj;
+
+GAME_PATH="$HOME/.steam/debian-installation/steamapps/common/Stardeus/Stardeus_Data/StreamingAssets/Mods/ComplexReactors/"
+rm -rf "$GAME_PATH"
+mkdir -vp "$GAME_PATH"
+cp -vr ./* "$GAME_PATH"
